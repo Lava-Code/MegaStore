@@ -1,0 +1,16 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #f4f4f4;
+}
+
+img {
+  /* width take of 100% and fit of the container */
+  width: 100%;
+  object-fit: contain;
+}

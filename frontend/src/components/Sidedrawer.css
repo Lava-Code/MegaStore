@@ -1,0 +1,72 @@
+.sidedrawer {
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #fff;
+    z-index: 200;
+    transform: translateX(-100%);
+    transition: all 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+.sidedrawer.show {
+    transform: translateX(0);
+}
+
+.sidedrawer__links  {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+.sidedrawer__links > li {
+    display: flex;
+    
+    
+}
+.sidedrawer__links > li > a {
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    text-align: center;
+    flex: 1;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.3rem;
+    color:#171717
+}
+.sidedrawer__links > li > a:hover {
+    background: black;
+    color: blanchedalmond;
+}
+.sidedrawer__links > li > a > span {
+    display: flex;
+    justify-content: center;
+    margin-left: 8px;
+}
+.sidedrawer__cartbadge {
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 8px;
+    border-radius: 50%;
+    background-color: black;
+    font-size: 1rem;
+    color: blanchedalmond;
+}
+/* this mean whenever hover an a tag change the style of this class .sidedrawer__cartbadge */
+.sidedrawer__links > li > a:hover .sidedrawer__cartbadge {
+    background: white;
+    color: black;
+}
+@media (min-width: 960px) {
+    .sidedrawer {
+        display: none;
+    }
+}
+    
